@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
-import { Header } from './components/header';
 import { Content } from './components/content';
-import { Footer } from './components/footer';
+import { Read } from './components/read';
+import { Create } from './components/create';
 import { Bootstrap } from './components/bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -20,8 +20,8 @@ class App extends React.Component {
           {/* Routes tag used to declare different routes and their contents */}
           <Routes>
             <Route path='/home' element={<Content></Content>}> </Route>
-            <Route path='/Read' element={<Header></Header>}> </Route>
-            <Route path='/Create' element={<Footer></Footer>}> </Route>
+            <Route path='/Read' element={<Read></Read>}> </Route>
+            <Route path='/Create' element={<Create></Create>}> </Route>
           </Routes>
         </div>
       </Router>
